@@ -1,0 +1,7 @@
+contract name, Run Time, Coverage, gasless send, exception disorder, reentrancy, timestamp dependency, block number dependency, dangerous delegatecall, freezing ether, integer overflow, integer underflow, Not Tested, 
+Bank, 0d 0h 0m 0s, 100%, False, False, False, False, False, False, False, False, False, True, 
+dumbDAO, 0d 0h 2m 0s, 50%, False, False, False, False, False, False, False, False, False, True, 
+EtherStore, 0d 0h 2m 0s, 87%, False, False, False, False, False, False, False, False, False, True, 
+Owner, 0d 0h 2m 0s, 75%, False, False, False, False, False, False, False, False, False, True, 
+SimpleDAO, 0d 0h 0m 0s, 100%, False, True, False, False, False, False, False, False, False, True, 
+TokensGate, 0d 0h 2m 0s, 54%, False, False, True, False, False, False, False, False, False, True, 

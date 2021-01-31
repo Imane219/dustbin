@@ -1,0 +1,7 @@
+/TEST/*
+!/TEST/pyfile/
+
+/sFuzz/*
+!/sFuzz/fuzzer/
+!/sFuzz/libfuzzer/
+!/sFuzz/liboracle/
