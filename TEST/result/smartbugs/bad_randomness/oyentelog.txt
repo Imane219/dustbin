@@ -1,0 +1,57 @@
+scan blackjack.sol, return 1
+=================
+log:
+CRITICAL:root:solc output:
+
+CRITICAL:root:../solfile/blackjack.sol:21:24: Error: Undeclared identifier.
+		return uint8(uint256(keccak256(block.blockhash(b), player, cardNumber, timestamp)) % 52);
+		                     ^-------^
+
+CRITICAL:root:Solidity compilation failed.
+=================
+
+scan Ethraffle_v4b.sol, return 0
+scan GuessTheRandomNumberChallenge.sol, return 0
+scan Lottery.sol, return 1
+=================
+log:
+CRITICAL:root:solc output:
+
+======= Lottery =======
+Contract JSON ABI
+[{"constant":false,"inputs":[],"name":"makeBet","outputs":[],"payable":false,"type":"function"},{"constant":false,"inputs":[],"name":"destroy","outputs":[],"payable":false,"type":"function"},{"constant":false,"inputs":[],"name":"getBets","outputs":[],"payable":false,"type":"function"},{"inputs":[],"type":"constructor"},{"payable":false,"type":"fallback"},{"anonymous":false,"inputs":[{"indexed":false,"name":"betAmount","type":"uint256"},{"indexed":false,"name":"blockNumber","type":"uint256"},{"indexed":false,"name":"won","type":"bool"}],"name":"GetBet","type":"event"}]
+
+
+CRITICAL:root:
+CRITICAL:root:Solidity compilation failed.
+=================
+
+scan LuckyDoubler.sol, return 1
+=================
+log:
+CRITICAL:root:solc output:
+
+======= LuckyDoubler =======
+Contract JSON ABI
+[{"constant":true,"inputs":[],"name":"multiplierFactor","outputs":[{"name":"factor","type":"uint256"},{"name":"info","type":"string"}],"payable":false,"type":"function"},{"constant":false,"inputs":[{"name":"newFee","type":"uint256"}],"name":"changeFee","outputs":[],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"totalEntries","outputs":[{"name":"count","type":"uint256"},{"name":"info","type":"string"}],"payable":false,"type":"function"},{"constant":true,"inputs":[{"name":"user","type":"address"}],"name":"userStats","outputs":[{"name":"deposits","type":"uint256"},{"name":"payouts","type":"uint256"},{"name":"info","type":"string"}],"payable":false,"type":"function"},{"constant":false,"inputs":[{"name":"newOwner","type":"address"}],"name":"changeOwner","outputs":[],"payable":false,"type":"function"},{"constant":false,"inputs":[{"name":"multi","type":"uint256"}],"name":"changeMultiplier","outputs":[],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"currentFee","outputs":[{"name":"feePercentage","type":"uint256"},{"name":"info","type":"string"}],"payable":false,"type":"function"},{"constant":true,"inputs":[{"name":"index","type":"uint256"}],"name":"entryDetails","outputs":[{"name":"user","type":"address"},{"name":"payout","type":"uint256"},{"name":"paid","type":"bool"},{"name":"info","type":"string"}],"payable":false,"type":"function"},{"inputs":[],"type":"constructor"},{"payable":false,"type":"fallback"}]
+
+
+CRITICAL:root:../solfile/LuckyDoubler.sol:60:14: Warning: Return value of low-level calls not used.
+             msg.sender.send(msg.value);
+             ^------------------------^
+../solfile/LuckyDoubler.sol:74:10: Warning: Return value of low-level calls not used.
+        	msg.sender.send(msg.value - 1 ether);
+        	^----------------------------------^
+../solfile/LuckyDoubler.sol:102:13: Warning: Return value of low-level calls not used.
+            theEntry.entryAddress.send(payout);
+            ^--------------------------------^
+../solfile/LuckyDoubler.sol:119:17: Warning: Return value of low-level calls not used.
+                owner.send(fees);
+                ^--------------^
+
+CRITICAL:root:Solidity compilation failed.
+=================
+
+scan PredictTheBlockHashChallenge.sol, return 0
+scan RandomNumberGenerator.sol, return 0
+scan SmartBillions.sol, return 0

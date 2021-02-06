@@ -1,0 +1,933 @@
+scan ACCURAL_DEPOSIT.sol, return 1
+=================
+log:
+INFO:root:contract ../solfile/ACCURAL_DEPOSIT.sol:ACCURAL_DEPOSIT:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 99.0%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:../solfile/ACCURAL_DEPOSIT.sol:55:16: Warning: Integer Underflow.
+            if(msg.sender.call.value(_am)()
+Integer Underflow occurs if:
+    balances[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+    _am = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+    MinSum = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+INFO:symExec:../solfile/ACCURAL_DEPOSIT.sol:58:17: Warning: Re-Entrancy Vulnerability.
+                Log.AddMessage(msg.sender,_am,"Collect")
+../solfile/ACCURAL_DEPOSIT.sol:55:16: Warning: Re-Entrancy Vulnerability.
+            if(msg.sender.call.value(_am)()
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract ../solfile/ACCURAL_DEPOSIT.sol:LogFile:
+[{"constant":true,"inputs":[{"name":"","type":"address"}],"name":"balances","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_log","type":"address"}],"name":"SetLogFile","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_am","type":"uint256"}],"name":"Collect","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"constant":false,"inputs":[],"name":"Initialized","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_val","type":"uint256"}],"name":"SetMinSum","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"MinSum","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[],"name":"Deposit","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"payable":true,"stateMutability":"payable","type":"fallback"}]
+[{u'inputs': [{u'type': u'address', u'name': u''}], u'constant': True, u'name': u'balances', u'outputs': [{u'type': u'uint256', u'name': u''}], u'stateMutability': u'view', u'payable': False, u'type': u'function'}, {u'inputs': [{u'type': u'address', u'name': u'_log'}], u'constant': False, u'name': u'SetLogFile', u'outputs': [], u'stateMutability': u'nonpayable', u'payable': False, u'type': u'function'}, {u'inputs': [{u'type': u'uint256', u'name': u'_am'}], u'constant': False, u'name': u'Collect', u'outputs': [], u'stateMutability': u'payable', u'payable': True, u'type': u'function'}, {u'inputs': [], u'constant': False, u'name': u'Initialized', u'outputs': [], u'stateMutability': u'nonpayable', u'payable': False, u'type': u'function'}, {u'inputs': [{u'type': u'uint256', u'name': u'_val'}], u'constant': False, u'name': u'SetMinSum', u'outputs': [], u'stateMutability': u'nonpayable', u'payable': False, u'type': u'function'}, {u'inputs': [], u'constant': True, u'name': u'MinSum', u'outputs': [{u'type': u'uint256', u'name': u''}], u'stateMutability': u'view', u'payable': False, u'type': u'function'}, {u'inputs': [], u'constant': False, u'name': u'Deposit', u'outputs': [], u'stateMutability': u'payable', u'payable': True, u'type': u'function'}, {u'stateMutability': u'payable', u'payable': True, u'type': u'fallback'}]
+64 96
+64 96
+64 96
+64 96
+_log
+_am
+64 96
+64 96
+64 96
+64 96
+_val
+64 96
+64 96
+64 96
+64 96
+64 96
+64 96
+2
+{}
+1
+{}
+[]
+=================
+
+scan BANK_SAFE.sol, return 1
+=================
+log:
+INFO:root:contract ../solfile/BANK_SAFE.sol:BANK_SAFE:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 99.0%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:../solfile/BANK_SAFE.sol:54:16: Warning: Integer Underflow.
+            if(msg.sender.call.value(_am)()
+Integer Underflow occurs if:
+    balances[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+    _am = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+    MinSum = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+INFO:symExec:../solfile/BANK_SAFE.sol:57:17: Warning: Re-Entrancy Vulnerability.
+                Log.AddMessage(msg.sender,_am,"Collect")
+../solfile/BANK_SAFE.sol:54:16: Warning: Re-Entrancy Vulnerability.
+            if(msg.sender.call.value(_am)()
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract ../solfile/BANK_SAFE.sol:LogFile:
+[{"constant":true,"inputs":[{"name":"","type":"address"}],"name":"balances","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_log","type":"address"}],"name":"SetLogFile","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_am","type":"uint256"}],"name":"Collect","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"constant":false,"inputs":[],"name":"Initialized","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_val","type":"uint256"}],"name":"SetMinSum","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"MinSum","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[],"name":"Deposit","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"payable":true,"stateMutability":"payable","type":"fallback"}]
+[{u'inputs': [{u'type': u'address', u'name': u''}], u'constant': True, u'name': u'balances', u'outputs': [{u'type': u'uint256', u'name': u''}], u'stateMutability': u'view', u'payable': False, u'type': u'function'}, {u'inputs': [{u'type': u'address', u'name': u'_log'}], u'constant': False, u'name': u'SetLogFile', u'outputs': [], u'stateMutability': u'nonpayable', u'payable': False, u'type': u'function'}, {u'inputs': [{u'type': u'uint256', u'name': u'_am'}], u'constant': False, u'name': u'Collect', u'outputs': [], u'stateMutability': u'payable', u'payable': True, u'type': u'function'}, {u'inputs': [], u'constant': False, u'name': u'Initialized', u'outputs': [], u'stateMutability': u'nonpayable', u'payable': False, u'type': u'function'}, {u'inputs': [{u'type': u'uint256', u'name': u'_val'}], u'constant': False, u'name': u'SetMinSum', u'outputs': [], u'stateMutability': u'nonpayable', u'payable': False, u'type': u'function'}, {u'inputs': [], u'constant': True, u'name': u'MinSum', u'outputs': [{u'type': u'uint256', u'name': u''}], u'stateMutability': u'view', u'payable': False, u'type': u'function'}, {u'inputs': [], u'constant': False, u'name': u'Deposit', u'outputs': [], u'stateMutability': u'payable', u'payable': True, u'type': u'function'}, {u'stateMutability': u'payable', u'payable': True, u'type': u'fallback'}]
+64 96
+64 96
+64 96
+64 96
+_log
+_am
+64 96
+64 96
+64 96
+64 96
+_val
+64 96
+64 96
+64 96
+64 96
+64 96
+64 96
+2
+{}
+1
+{}
+[]
+=================
+
+scan etherbank.sol, return 1
+=================
+log:
+CRITICAL:root:solc output:
+
+======= EtherBank =======
+Contract JSON ABI
+[{"constant":false,"inputs":[],"name":"withdrawBalance","outputs":[],"payable":false,"type":"function"},{"constant":false,"inputs":[],"name":"addToBalance","outputs":[],"payable":false,"type":"function"},{"constant":true,"inputs":[{"name":"user","type":"address"}],"name":"getBalance","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"}]
+
+
+CRITICAL:root:
+CRITICAL:root:Solidity compilation failed.
+=================
+
+scan ETH_FUND.sol, return 1
+=================
+log:
+INFO:root:contract ../solfile/ETH_FUND.sol:ETH_FUND:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 98.6%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:../solfile/ETH_FUND.sol:44:16: Warning: Integer Underflow.
+            if(msg.sender.call.value(_am)()
+Integer Underflow occurs if:
+    lastBlock = 0
+    balances[msg.sender] = 0
+    _am = 0
+INFO:symExec:../solfile/ETH_FUND.sol:44:16: Warning: Re-Entrancy Vulnerability.
+            if(msg.sender.call.value(_am)()
+../solfile/ETH_FUND.sol:47:17: Warning: Re-Entrancy Vulnerability.
+                TransferLog.AddMessage(msg.sender,_am,"CashOut")
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract ../solfile/ETH_FUND.sol:Log:
+[{"constant":true,"inputs":[],"name":"MinDeposit","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"}],"name":"balances","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_am","type":"uint256"}],"name":"CashOut","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"constant":false,"inputs":[],"name":"Deposit","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"inputs":[{"name":"_log","type":"address"}],"payable":false,"stateMutability":"nonpayable","type":"constructor"},{"payable":true,"stateMutability":"payable","type":"fallback"}]
+[{u'inputs': [], u'constant': True, u'name': u'MinDeposit', u'outputs': [{u'type': u'uint256', u'name': u''}], u'stateMutability': u'view', u'payable': False, u'type': u'function'}, {u'inputs': [{u'type': u'address', u'name': u''}], u'constant': True, u'name': u'balances', u'outputs': [{u'type': u'uint256', u'name': u''}], u'stateMutability': u'view', u'payable': False, u'type': u'function'}, {u'inputs': [{u'type': u'uint256', u'name': u'_am'}], u'constant': False, u'name': u'CashOut', u'outputs': [], u'stateMutability': u'payable', u'payable': True, u'type': u'function'}, {u'inputs': [], u'constant': False, u'name': u'Deposit', u'outputs': [], u'stateMutability': u'payable', u'payable': True, u'type': u'function'}, {u'stateMutability': u'nonpayable', u'inputs': [{u'type': u'address', u'name': u'_log'}], u'type': u'constructor', u'payable': False}, {u'stateMutability': u'payable', u'payable': True, u'type': u'fallback'}]
+64 96
+64 96
+64 96
+64 96
+_am
+64 96
+64 96
+64 96
+64 96
+64 96
+64 96
+2
+{}
+1
+{}
+[]
+=================
+
+scan ETH_VAULT.sol, return 1
+=================
+log:
+INFO:root:contract ../solfile/ETH_VAULT.sol:ETH_VAULT:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 98.6%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:../solfile/ETH_VAULT.sol:41:16: Warning: Integer Underflow.
+            if(msg.sender.call.value(_am)()
+Integer Underflow occurs if:
+    balances[msg.sender] = 0
+    _am = 0
+INFO:symExec:../solfile/ETH_VAULT.sol:44:17: Warning: Re-Entrancy Vulnerability.
+                TransferLog.AddMessage(msg.sender,_am,"CashOut")
+../solfile/ETH_VAULT.sol:41:16: Warning: Re-Entrancy Vulnerability.
+            if(msg.sender.call.value(_am)()
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract ../solfile/ETH_VAULT.sol:Log:
+[{"constant":true,"inputs":[],"name":"MinDeposit","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"}],"name":"balances","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_am","type":"uint256"}],"name":"CashOut","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"constant":false,"inputs":[],"name":"Deposit","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"inputs":[{"name":"_log","type":"address"}],"payable":false,"stateMutability":"nonpayable","type":"constructor"},{"payable":true,"stateMutability":"payable","type":"fallback"}]
+[{u'inputs': [], u'constant': True, u'name': u'MinDeposit', u'outputs': [{u'type': u'uint256', u'name': u''}], u'stateMutability': u'view', u'payable': False, u'type': u'function'}, {u'inputs': [{u'type': u'address', u'name': u''}], u'constant': True, u'name': u'balances', u'outputs': [{u'type': u'uint256', u'name': u''}], u'stateMutability': u'view', u'payable': False, u'type': u'function'}, {u'inputs': [{u'type': u'uint256', u'name': u'_am'}], u'constant': False, u'name': u'CashOut', u'outputs': [], u'stateMutability': u'payable', u'payable': True, u'type': u'function'}, {u'inputs': [], u'constant': False, u'name': u'Deposit', u'outputs': [], u'stateMutability': u'payable', u'payable': True, u'type': u'function'}, {u'stateMutability': u'nonpayable', u'inputs': [{u'type': u'address', u'name': u'_log'}], u'type': u'constructor', u'payable': False}, {u'stateMutability': u'payable', u'payable': True, u'type': u'fallback'}]
+64 96
+64 96
+64 96
+64 96
+_am
+64 96
+64 96
+64 96
+64 96
+64 96
+64 96
+2
+{}
+1
+{}
+[]
+=================
+
+scan ETH_VAULT_MOD.sol, return 1
+=================
+log:
+INFO:root:contract ../solfile/ETH_VAULT_MOD.sol:ETH_VAULT_MOD:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 98.7%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:../solfile/ETH_VAULT_MOD.sol:41:16: Warning: Integer Underflow.
+            if(msg.sender.call.value(_am)()
+Integer Underflow occurs if:
+    balances[msg.sender] = 0
+    _am = 0
+INFO:symExec:../solfile/ETH_VAULT_MOD.sol:41:16: Warning: Re-Entrancy Vulnerability.
+            if(msg.sender.call.value(_am)()
+../solfile/ETH_VAULT_MOD.sol:44:17: Warning: Re-Entrancy Vulnerability.
+                TransferLog.AddMessage(msg.sender,_am,"CashOut")
+INFO:symExec:	====== Analysis Completed ======
+INFO:root:contract ../solfile/ETH_VAULT_MOD.sol:Log:
+[{"constant":true,"inputs":[],"name":"MinDeposit","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"}],"name":"balances","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_log","type":"address"}],"name":"ETH_VAULT","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_am","type":"uint256"}],"name":"CashOut","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"constant":false,"inputs":[],"name":"Deposit","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"payable":true,"stateMutability":"payable","type":"fallback"}]
+[{u'inputs': [], u'constant': True, u'name': u'MinDeposit', u'outputs': [{u'type': u'uint256', u'name': u''}], u'stateMutability': u'view', u'payable': False, u'type': u'function'}, {u'inputs': [{u'type': u'address', u'name': u''}], u'constant': True, u'name': u'balances', u'outputs': [{u'type': u'uint256', u'name': u''}], u'stateMutability': u'view', u'payable': False, u'type': u'function'}, {u'inputs': [{u'type': u'address', u'name': u'_log'}], u'constant': False, u'name': u'ETH_VAULT', u'outputs': [], u'stateMutability': u'nonpayable', u'payable': False, u'type': u'function'}, {u'inputs': [{u'type': u'uint256', u'name': u'_am'}], u'constant': False, u'name': u'CashOut', u'outputs': [], u'stateMutability': u'payable', u'payable': True, u'type': u'function'}, {u'inputs': [], u'constant': False, u'name': u'Deposit', u'outputs': [], u'stateMutability': u'payable', u'payable': True, u'type': u'function'}, {u'stateMutability': u'payable', u'payable': True, u'type': u'fallback'}]
+64 96
+64 96
+64 96
+64 96
+_log
+_am
+64 96
+64 96
+64 96
+64 96
+64 96
+64 96
+2
+{}
+1
+{}
+[]
+=================
+
+scan ModifierEntrancy.sol, return 0
+scan MONEY_BOX.sol, return 1
+=================
+log:
+INFO:root:contract ../solfile/MONEY_BOX.sol:Log:
+INFO:root:contract ../solfile/MONEY_BOX.sol:MONEY_BOX:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 99.1%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+[{"constant":false,"inputs":[{"name":"_log","type":"address"}],"name":"SetLogFile","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_am","type":"uint256"}],"name":"Collect","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"constant":false,"inputs":[],"name":"Initialized","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_val","type":"uint256"}],"name":"SetMinSum","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_lockTime","type":"uint256"}],"name":"Put","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"}],"name":"Acc","outputs":[{"name":"unlockTime","type":"uint256"},{"name":"balance","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"MinSum","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"payable":true,"stateMutability":"payable","type":"fallback"}]
+[{u'inputs': [{u'type': u'address', u'name': u'_log'}], u'constant': False, u'name': u'SetLogFile', u'outputs': [], u'stateMutability': u'nonpayable', u'payable': False, u'type': u'function'}, {u'inputs': [{u'type': u'uint256', u'name': u'_am'}], u'constant': False, u'name': u'Collect', u'outputs': [], u'stateMutability': u'payable', u'payable': True, u'type': u'function'}, {u'inputs': [], u'constant': False, u'name': u'Initialized', u'outputs': [], u'stateMutability': u'nonpayable', u'payable': False, u'type': u'function'}, {u'inputs': [{u'type': u'uint256', u'name': u'_val'}], u'constant': False, u'name': u'SetMinSum', u'outputs': [], u'stateMutability': u'nonpayable', u'payable': False, u'type': u'function'}, {u'inputs': [{u'type': u'uint256', u'name': u'_lockTime'}], u'constant': False, u'name': u'Put', u'outputs': [], u'stateMutability': u'payable', u'payable': True, u'type': u'function'}, {u'inputs': [{u'type': u'address', u'name': u''}], u'constant': True, u'name': u'Acc', u'outputs': [{u'type': u'uint256', u'name': u'unlockTime'}, {u'type': u'uint256', u'name': u'balance'}], u'stateMutability': u'view', u'payable': False, u'type': u'function'}, {u'inputs': [], u'constant': True, u'name': u'MinSum', u'outputs': [{u'type': u'uint256', u'name': u''}], u'stateMutability': u'view', u'payable': False, u'type': u'function'}, {u'stateMutability': u'payable', u'payable': True, u'type': u'fallback'}]
+64 96
+64 96
+64 96
+64 96
+_log
+_am
+64 96
+64 96
+64 96
+64 96
+_val
+_lockTime
+64 96
+64 96
+64 96
+64 96
+64 96
+64 96
+64 96
+64 96
+64 96
+64 96
+64 96
+64 96
+[Iv = 524288,
+ IH_s = 1,
+ Ia_store-some_var_4- = 0,
+ Id_1 = 28898938005948861049358263287157975716967106783062975587063544487221370290176,
+ _am = 57896044618658097711785492504343953926634992332820282019728792003956565344257,
+ Ia_store-1 + some_var_4- = 86844066927987146567678238756515930889952488499230423029593188005934847229952,
+ init_Is = 28948022309329048855892746252171976963317496166410141009864396001978282409984,
+ init_Ia = 0,
+ Id_size = 57896044618658097711785492504343953926634992332820282019728792003956564819968,
+ Ia_store-1-MinSum = 28948022309329048855892746252171976963317496166410141009864396001978282409985]
+Traceback (most recent call last):
+  File "../../oyente/oyente/oyente.py", line 223, in <module>
+    main()
+  File "../../oyente/oyente/oyente.py", line 218, in main
+    exit_code = analyze_solidity()
+  File "../../oyente/oyente/oyente.py", line 111, in analyze_solidity
+    results, exit_code = run_solidity_analysis(inputs)
+  File "../../oyente/oyente/oyente.py", line 87, in run_solidity_analysis
+    result, return_code = symExec.run(disasm_file=inp['disasm_file'], source_map=inp['source_map'], source_file=inp['source'],ABI=inp['ABI'],contract_name=inp['c_name'])
+  File "/mnt/c/Users/Reska/Desktop/dc/dustbin/oyente/oyente/symExec.py", line 2781, in run
+    ret = detect_vulnerabilities()
+  File "/mnt/c/Users/Reska/Desktop/dc/dustbin/oyente/oyente/symExec.py", line 2597, in detect_vulnerabilities
+    func_params_value_timestamp=detect_time_dependency()#####TD3
+  File "/mnt/c/Users/Reska/Desktop/dc/dustbin/oyente/oyente/symExec.py", line 2160, in detect_time_dependency
+    inputs=func['inputs']
+KeyError: 'inputs'
+=================
+
+scan MY_BANK.sol, return 1
+=================
+log:
+WARNING:root:You are using solc version 0.4.25, The latest supported version is 0.4.19
+INFO:root:contract ../solfile/MY_BANK.sol:Log:
+INFO:root:contract ../solfile/MY_BANK.sol:MY_BANK:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 97.5%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+[{"constant":false,"inputs":[{"name":"_am","type":"uint256"}],"name":"Collect","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"constant":false,"inputs":[{"name":"_unlockTime","type":"uint256"}],"name":"Put","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"}],"name":"Acc","outputs":[{"name":"unlockTime","type":"uint256"},{"name":"balance","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"MinSum","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"inputs":[{"name":"log","type":"address"}],"payable":false,"stateMutability":"nonpayable","type":"constructor"},{"payable":true,"stateMutability":"payable","type":"fallback"}]
+[{u'inputs': [{u'type': u'uint256', u'name': u'_am'}], u'constant': False, u'name': u'Collect', u'outputs': [], u'stateMutability': u'payable', u'payable': True, u'type': u'function'}, {u'inputs': [{u'type': u'uint256', u'name': u'_unlockTime'}], u'constant': False, u'name': u'Put', u'outputs': [], u'stateMutability': u'payable', u'payable': True, u'type': u'function'}, {u'inputs': [{u'type': u'address', u'name': u''}], u'constant': True, u'name': u'Acc', u'outputs': [{u'type': u'uint256', u'name': u'unlockTime'}, {u'type': u'uint256', u'name': u'balance'}], u'stateMutability': u'view', u'payable': False, u'type': u'function'}, {u'inputs': [], u'constant': True, u'name': u'MinSum', u'outputs': [{u'type': u'uint256', u'name': u''}], u'stateMutability': u'view', u'payable': False, u'type': u'function'}, {u'stateMutability': u'nonpayable', u'inputs': [{u'type': u'address', u'name': u'log'}], u'type': u'constructor', u'payable': False}, {u'stateMutability': u'payable', u'payable': True, u'type': u'fallback'}]
+64 128
+64 128
+_am
+64 128
+64 128
+64 128
+64 128
+_unlockTime
+64 128
+64 128
+64 128
+64 128
+64 128
+64 128
+64 128
+64 128
+64 128
+64 128
+[Ia_store-some_var_3- = 0,
+ Iv = 33554432,
+ IH_s = 1,
+ Ia_store-2-MinSum = 28948022309329048855892746252171976963317496166410141009864396001978282409985,
+ Id_1 = 28898938005948861049358263287157975716967106783062975587063544487221370290176,
+ _am = 57896044618658097711785492504343953926634992332820282019728792003956631928833,
+ Ia_store-1 + some_var_3- = 86844066927987146567678238756515930889952488499230423029593188005934847229952,
+ init_Is = 28948022309329048855892746252171976963317496166410141009864396001978282409984,
+ init_Ia = 33554432,
+ Id_size = 57896044618658097711785492504343953926634992332820282019728792003956564819968]
+Traceback (most recent call last):
+  File "../../oyente/oyente/oyente.py", line 223, in <module>
+    main()
+  File "../../oyente/oyente/oyente.py", line 218, in main
+    exit_code = analyze_solidity()
+  File "../../oyente/oyente/oyente.py", line 111, in analyze_solidity
+    results, exit_code = run_solidity_analysis(inputs)
+  File "../../oyente/oyente/oyente.py", line 87, in run_solidity_analysis
+    result, return_code = symExec.run(disasm_file=inp['disasm_file'], source_map=inp['source_map'], source_file=inp['source'],ABI=inp['ABI'],contract_name=inp['c_name'])
+  File "/mnt/c/Users/Reska/Desktop/dc/dustbin/oyente/oyente/symExec.py", line 2781, in run
+    ret = detect_vulnerabilities()
+  File "/mnt/c/Users/Reska/Desktop/dc/dustbin/oyente/oyente/symExec.py", line 2597, in detect_vulnerabilities
+    func_params_value_timestamp=detect_time_dependency()#####TD3
+  File "/mnt/c/Users/Reska/Desktop/dc/dustbin/oyente/oyente/symExec.py", line 2161, in detect_time_dependency
+    name=func['name']
+KeyError: 'name'
+=================
+
+scan PENNY_BY_PENNY.sol, return 1
+=================
+log:
+INFO:root:contract ../solfile/PENNY_BY_PENNY.sol:LogFile:
+INFO:root:contract ../solfile/PENNY_BY_PENNY.sol:PENNY_BY_PENNY:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 99.1%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+[{"constant":false,"inputs":[{"name":"_log","type":"address"}],"name":"SetLogFile","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_am","type":"uint256"}],"name":"Collect","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"constant":false,"inputs":[],"name":"Initialized","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_val","type":"uint256"}],"name":"SetMinSum","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_lockTime","type":"uint256"}],"name":"Put","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"}],"name":"Acc","outputs":[{"name":"unlockTime","type":"uint256"},{"name":"balance","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"MinSum","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"payable":true,"stateMutability":"payable","type":"fallback"}]
+[{u'inputs': [{u'type': u'address', u'name': u'_log'}], u'constant': False, u'name': u'SetLogFile', u'outputs': [], u'stateMutability': u'nonpayable', u'payable': False, u'type': u'function'}, {u'inputs': [{u'type': u'uint256', u'name': u'_am'}], u'constant': False, u'name': u'Collect', u'outputs': [], u'stateMutability': u'payable', u'payable': True, u'type': u'function'}, {u'inputs': [], u'constant': False, u'name': u'Initialized', u'outputs': [], u'stateMutability': u'nonpayable', u'payable': False, u'type': u'function'}, {u'inputs': [{u'type': u'uint256', u'name': u'_val'}], u'constant': False, u'name': u'SetMinSum', u'outputs': [], u'stateMutability': u'nonpayable', u'payable': False, u'type': u'function'}, {u'inputs': [{u'type': u'uint256', u'name': u'_lockTime'}], u'constant': False, u'name': u'Put', u'outputs': [], u'stateMutability': u'payable', u'payable': True, u'type': u'function'}, {u'inputs': [{u'type': u'address', u'name': u''}], u'constant': True, u'name': u'Acc', u'outputs': [{u'type': u'uint256', u'name': u'unlockTime'}, {u'type': u'uint256', u'name': u'balance'}], u'stateMutability': u'view', u'payable': False, u'type': u'function'}, {u'inputs': [], u'constant': True, u'name': u'MinSum', u'outputs': [{u'type': u'uint256', u'name': u''}], u'stateMutability': u'view', u'payable': False, u'type': u'function'}, {u'stateMutability': u'payable', u'payable': True, u'type': u'fallback'}]
+64 96
+64 96
+64 96
+64 96
+_log
+_am
+64 96
+64 96
+64 96
+64 96
+_val
+_lockTime
+64 96
+64 96
+64 96
+64 96
+64 96
+64 96
+64 96
+64 96
+64 96
+64 96
+64 96
+64 96
+[Iv = 524288,
+ IH_s = 1,
+ Ia_store-some_var_4- = 0,
+ Id_1 = 28898938005948861049358263287157975716967106783062975587063544487221370290176,
+ _am = 57896044618658097711785492504343953926634992332820282019728792003956565344257,
+ Ia_store-1 + some_var_4- = 86844066927987146567678238756515930889952488499230423029593188005934847229952,
+ init_Is = 28948022309329048855892746252171976963317496166410141009864396001978282409984,
+ init_Ia = 0,
+ Id_size = 57896044618658097711785492504343953926634992332820282019728792003956564819968,
+ Ia_store-1-MinSum = 28948022309329048855892746252171976963317496166410141009864396001978282409985]
+Traceback (most recent call last):
+  File "../../oyente/oyente/oyente.py", line 223, in <module>
+    main()
+  File "../../oyente/oyente/oyente.py", line 218, in main
+    exit_code = analyze_solidity()
+  File "../../oyente/oyente/oyente.py", line 111, in analyze_solidity
+    results, exit_code = run_solidity_analysis(inputs)
+  File "../../oyente/oyente/oyente.py", line 87, in run_solidity_analysis
+    result, return_code = symExec.run(disasm_file=inp['disasm_file'], source_map=inp['source_map'], source_file=inp['source'],ABI=inp['ABI'],contract_name=inp['c_name'])
+  File "/mnt/c/Users/Reska/Desktop/dc/dustbin/oyente/oyente/symExec.py", line 2781, in run
+    ret = detect_vulnerabilities()
+  File "/mnt/c/Users/Reska/Desktop/dc/dustbin/oyente/oyente/symExec.py", line 2597, in detect_vulnerabilities
+    func_params_value_timestamp=detect_time_dependency()#####TD3
+  File "/mnt/c/Users/Reska/Desktop/dc/dustbin/oyente/oyente/symExec.py", line 2160, in detect_time_dependency
+    inputs=func['inputs']
+KeyError: 'inputs'
+=================
+
+scan PERSONAL_BANK.sol, return 1
+=================
+log:
+INFO:root:contract ../solfile/PERSONAL_BANK.sol:LogFile:
+INFO:root:contract ../solfile/PERSONAL_BANK.sol:PERSONAL_BANK:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 99.0%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:../solfile/PERSONAL_BANK.sol:54:16: Warning: Integer Underflow.
+            if(msg.sender.call.value(_am)()
+Integer Underflow occurs if:
+    balances[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+    _am = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+    MinSum = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+INFO:symExec:../solfile/PERSONAL_BANK.sol:57:17: Warning: Re-Entrancy Vulnerability.
+                Log.AddMessage(msg.sender,_am,"Collect")
+../solfile/PERSONAL_BANK.sol:54:16: Warning: Re-Entrancy Vulnerability.
+            if(msg.sender.call.value(_am)()
+INFO:symExec:	====== Analysis Completed ======
+[{"constant":true,"inputs":[{"name":"","type":"address"}],"name":"balances","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_log","type":"address"}],"name":"SetLogFile","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_am","type":"uint256"}],"name":"Collect","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"constant":false,"inputs":[],"name":"Initialized","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_val","type":"uint256"}],"name":"SetMinSum","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"MinSum","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[],"name":"Deposit","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"payable":true,"stateMutability":"payable","type":"fallback"}]
+[{u'inputs': [{u'type': u'address', u'name': u''}], u'constant': True, u'name': u'balances', u'outputs': [{u'type': u'uint256', u'name': u''}], u'stateMutability': u'view', u'payable': False, u'type': u'function'}, {u'inputs': [{u'type': u'address', u'name': u'_log'}], u'constant': False, u'name': u'SetLogFile', u'outputs': [], u'stateMutability': u'nonpayable', u'payable': False, u'type': u'function'}, {u'inputs': [{u'type': u'uint256', u'name': u'_am'}], u'constant': False, u'name': u'Collect', u'outputs': [], u'stateMutability': u'payable', u'payable': True, u'type': u'function'}, {u'inputs': [], u'constant': False, u'name': u'Initialized', u'outputs': [], u'stateMutability': u'nonpayable', u'payable': False, u'type': u'function'}, {u'inputs': [{u'type': u'uint256', u'name': u'_val'}], u'constant': False, u'name': u'SetMinSum', u'outputs': [], u'stateMutability': u'nonpayable', u'payable': False, u'type': u'function'}, {u'inputs': [], u'constant': True, u'name': u'MinSum', u'outputs': [{u'type': u'uint256', u'name': u''}], u'stateMutability': u'view', u'payable': False, u'type': u'function'}, {u'inputs': [], u'constant': False, u'name': u'Deposit', u'outputs': [], u'stateMutability': u'payable', u'payable': True, u'type': u'function'}, {u'stateMutability': u'payable', u'payable': True, u'type': u'fallback'}]
+64 96
+64 96
+64 96
+64 96
+_log
+_am
+64 96
+64 96
+64 96
+64 96
+_val
+64 96
+64 96
+64 96
+64 96
+64 96
+64 96
+2
+{}
+1
+{}
+[]
+=================
+
+scan PrivateBankMod.sol, return 1
+=================
+log:
+INFO:root:contract ../solfile/PrivateBankMod.sol:Log:
+INFO:root:contract ../solfile/PrivateBankMod.sol:PrivateBankMod:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 98.7%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:../solfile/PrivateBankMod.sol:38:16: Warning: Integer Underflow.
+            if(msg.sender.call.value(_am)()
+Integer Underflow occurs if:
+    balances[msg.sender] = 0
+    _am = 0
+INFO:symExec:../solfile/PrivateBankMod.sol:38:16: Warning: Re-Entrancy Vulnerability.
+            if(msg.sender.call.value(_am)()
+../solfile/PrivateBankMod.sol:41:17: Warning: Re-Entrancy Vulnerability.
+                TransferLog.AddMessage(msg.sender,_am,"CashOut")
+INFO:symExec:	====== Analysis Completed ======
+[{"constant":true,"inputs":[],"name":"MinDeposit","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"}],"name":"balances","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_am","type":"uint256"}],"name":"CashOut","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_lib","type":"address"}],"name":"PrivateBank","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[],"name":"Deposit","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"payable":true,"stateMutability":"payable","type":"fallback"}]
+[{u'inputs': [], u'constant': True, u'name': u'MinDeposit', u'outputs': [{u'type': u'uint256', u'name': u''}], u'stateMutability': u'view', u'payable': False, u'type': u'function'}, {u'inputs': [{u'type': u'address', u'name': u''}], u'constant': True, u'name': u'balances', u'outputs': [{u'type': u'uint256', u'name': u''}], u'stateMutability': u'view', u'payable': False, u'type': u'function'}, {u'inputs': [{u'type': u'uint256', u'name': u'_am'}], u'constant': False, u'name': u'CashOut', u'outputs': [], u'stateMutability': u'nonpayable', u'payable': False, u'type': u'function'}, {u'inputs': [{u'type': u'address', u'name': u'_lib'}], u'constant': False, u'name': u'PrivateBank', u'outputs': [], u'stateMutability': u'nonpayable', u'payable': False, u'type': u'function'}, {u'inputs': [], u'constant': False, u'name': u'Deposit', u'outputs': [], u'stateMutability': u'payable', u'payable': True, u'type': u'function'}, {u'stateMutability': u'payable', u'payable': True, u'type': u'fallback'}]
+64 96
+64 96
+64 96
+64 96
+_am
+64 96
+64 96
+64 96
+64 96
+_lib
+64 96
+64 96
+2
+{}
+1
+{}
+[]
+=================
+
+scan PrivateDeposit.sol, return 1
+=================
+log:
+INFO:root:contract ../solfile/PrivateDeposit.sol:Log:
+INFO:root:contract ../solfile/PrivateDeposit.sol:PrivateDeposit:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 98.9%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:../solfile/PrivateDeposit.sol:52:16: Warning: Integer Underflow.
+            if(msg.sender.call.value(_am)()
+Integer Underflow occurs if:
+    balances[msg.sender] = 0
+    _am = 0
+INFO:symExec:../solfile/PrivateDeposit.sol:55:17: Warning: Re-Entrancy Vulnerability.
+                TransferLog.AddMessage(msg.sender,_am,"CashOut")
+../solfile/PrivateDeposit.sol:52:16: Warning: Re-Entrancy Vulnerability.
+            if(msg.sender.call.value(_am)()
+INFO:symExec:	====== Analysis Completed ======
+[{"constant":true,"inputs":[],"name":"MinDeposit","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"}],"name":"balances","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_lib","type":"address"}],"name":"setLog","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"owner","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_am","type":"uint256"}],"name":"CashOut","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[],"name":"Deposit","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"inputs":[],"payable":false,"stateMutability":"nonpayable","type":"constructor"},{"payable":true,"stateMutability":"payable","type":"fallback"}]
+[{u'inputs': [], u'constant': True, u'name': u'MinDeposit', u'outputs': [{u'type': u'uint256', u'name': u''}], u'stateMutability': u'view', u'payable': False, u'type': u'function'}, {u'inputs': [{u'type': u'address', u'name': u''}], u'constant': True, u'name': u'balances', u'outputs': [{u'type': u'uint256', u'name': u''}], u'stateMutability': u'view', u'payable': False, u'type': u'function'}, {u'inputs': [{u'type': u'address', u'name': u'_lib'}], u'constant': False, u'name': u'setLog', u'outputs': [], u'stateMutability': u'nonpayable', u'payable': False, u'type': u'function'}, {u'inputs': [], u'constant': True, u'name': u'owner', u'outputs': [{u'type': u'address', u'name': u''}], u'stateMutability': u'view', u'payable': False, u'type': u'function'}, {u'inputs': [{u'type': u'uint256', u'name': u'_am'}], u'constant': False, u'name': u'CashOut', u'outputs': [], u'stateMutability': u'nonpayable', u'payable': False, u'type': u'function'}, {u'inputs': [], u'constant': False, u'name': u'Deposit', u'outputs': [], u'stateMutability': u'payable', u'payable': True, u'type': u'function'}, {u'stateMutability': u'nonpayable', u'inputs': [], u'type': u'constructor', u'payable': False}, {u'stateMutability': u'payable', u'payable': True, u'type': u'fallback'}]
+64 96
+64 96
+64 96
+64 96
+_lib
+64 96
+64 96
+_am
+64 96
+64 96
+64 96
+64 96
+64 96
+64 96
+2
+{}
+1
+{}
+[]
+=================
+
+scan PRIVATE_ETH_CELL.sol, return 1
+=================
+log:
+INFO:root:contract ../solfile/PRIVATE_ETH_CELL.sol:LogFile:
+INFO:root:contract ../solfile/PRIVATE_ETH_CELL.sol:PRIVATE_ETH_CELL:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 99.0%
+INFO:symExec:	  Integer Underflow: 			 True
+INFO:symExec:	  Integer Overflow: 			 False
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:../solfile/PRIVATE_ETH_CELL.sol:54:16: Warning: Integer Underflow.
+            if(msg.sender.call.value(_am)()
+Integer Underflow occurs if:
+    balances[msg.sender] = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+    _am = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+    MinSum = 115792089237316195423570985008687907853269984665640564039457584007913129639935
+INFO:symExec:../solfile/PRIVATE_ETH_CELL.sol:57:17: Warning: Re-Entrancy Vulnerability.
+                Log.AddMessage(msg.sender,_am,"Collect")
+../solfile/PRIVATE_ETH_CELL.sol:54:16: Warning: Re-Entrancy Vulnerability.
+            if(msg.sender.call.value(_am)()
+INFO:symExec:	====== Analysis Completed ======
+[{"constant":true,"inputs":[{"name":"","type":"address"}],"name":"balances","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_log","type":"address"}],"name":"SetLogFile","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_am","type":"uint256"}],"name":"Collect","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"constant":false,"inputs":[],"name":"Initialized","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_val","type":"uint256"}],"name":"SetMinSum","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"MinSum","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[],"name":"Deposit","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"payable":true,"stateMutability":"payable","type":"fallback"}]
+[{u'inputs': [{u'type': u'address', u'name': u''}], u'constant': True, u'name': u'balances', u'outputs': [{u'type': u'uint256', u'name': u''}], u'stateMutability': u'view', u'payable': False, u'type': u'function'}, {u'inputs': [{u'type': u'address', u'name': u'_log'}], u'constant': False, u'name': u'SetLogFile', u'outputs': [], u'stateMutability': u'nonpayable', u'payable': False, u'type': u'function'}, {u'inputs': [{u'type': u'uint256', u'name': u'_am'}], u'constant': False, u'name': u'Collect', u'outputs': [], u'stateMutability': u'payable', u'payable': True, u'type': u'function'}, {u'inputs': [], u'constant': False, u'name': u'Initialized', u'outputs': [], u'stateMutability': u'nonpayable', u'payable': False, u'type': u'function'}, {u'inputs': [{u'type': u'uint256', u'name': u'_val'}], u'constant': False, u'name': u'SetMinSum', u'outputs': [], u'stateMutability': u'nonpayable', u'payable': False, u'type': u'function'}, {u'inputs': [], u'constant': True, u'name': u'MinSum', u'outputs': [{u'type': u'uint256', u'name': u''}], u'stateMutability': u'view', u'payable': False, u'type': u'function'}, {u'inputs': [], u'constant': False, u'name': u'Deposit', u'outputs': [], u'stateMutability': u'payable', u'payable': True, u'type': u'function'}, {u'stateMutability': u'payable', u'payable': True, u'type': u'fallback'}]
+64 96
+64 96
+64 96
+64 96
+_log
+_am
+64 96
+64 96
+64 96
+64 96
+_val
+64 96
+64 96
+64 96
+64 96
+64 96
+64 96
+2
+{}
+1
+{}
+[]
+=================
+
+scan ReentrancyDAO.sol, return 1
+=================
+log:
+INFO:root:contract ../solfile/ReentrancyDAO.sol:ReentrancyDAO:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 98.0%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  True
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:../solfile/ReentrancyDAO.sol:25:9: Warning: Integer Overflow.
+        credit[msg.sender] += msg.value
+Integer Overflow occurs if:
+    credit[msg.sender] = 1
+../solfile/ReentrancyDAO.sol:26:9: Warning: Integer Overflow.
+        balance += msg.value
+Integer Overflow occurs if:
+    balance = 1
+INFO:symExec:../solfile/ReentrancyDAO.sol:18:31: Warning: Callstack Depth Attack Vulnerability.
+            bool callResult = msg.sender.call.value(oCredit)()
+INFO:symExec:../solfile/ReentrancyDAO.sol:18:31: Warning: Re-Entrancy Vulnerability.
+            bool callResult = msg.sender.call.value(oCredit)()
+INFO:symExec:	====== Analysis Completed ======
+[{"constant":false,"inputs":[],"name":"withdrawAll","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[],"name":"deposit","outputs":[],"payable":true,"stateMutability":"payable","type":"function"}]
+[{u'inputs': [], u'constant': False, u'name': u'withdrawAll', u'outputs': [], u'stateMutability': u'nonpayable', u'payable': False, u'type': u'function'}, {u'inputs': [], u'constant': False, u'name': u'deposit', u'outputs': [], u'stateMutability': u'payable', u'payable': True, u'type': u'function'}]
+64 96
+64 96
+2
+{}
+1
+{'withdrawAll': {}, 'deposit': {}}
+{'banlance': '0', 'timestamp': None, u'ReentrancyDAO': {'withdrawAll': {}, 'deposit': {}}, 'blocknumber': None}
+[{'banlance': '0', 'timestamp': None, u'ReentrancyDAO': {'withdrawAll': {}, 'deposit': {}}, 'blocknumber': None}]
+=================
+
+scan reentrancy_bonus.sol, return 1
+=================
+log:
+CRITICAL:root:solc output:
+
+CRITICAL:root:../solfile/reentrancy_bonus.sol:19:15: Error: Undeclared identifier.
+        (bool success, ) = recipient.call.value(amountToWithdraw)("");
+              ^-----^
+../solfile/reentrancy_bonus.sol:24:9: Error: Undeclared identifier.
+        require(!claimedBonus[recipient]); // Each recipient should only be able to claim the bonus once
+        ^-----^
+
+CRITICAL:root:Solidity compilation failed.
+=================
+
+scan reentrancy_cross_function.sol, return 1
+=================
+log:
+CRITICAL:root:solc output:
+
+CRITICAL:root:../solfile/reentrancy_cross_function.sol:24:15: Error: Undeclared identifier.
+        (bool success, ) = msg.sender.call.value(amountToWithdraw)(""); // At this point, the caller's code is executed, and can call transfer()
+              ^-----^
+
+CRITICAL:root:Solidity compilation failed.
+=================
+
+scan reentrancy_insecure.sol, return 1
+=================
+log:
+CRITICAL:root:solc output:
+
+CRITICAL:root:../solfile/reentrancy_insecure.sol:17:15: Error: Undeclared identifier.
+        (bool success, ) = msg.sender.call.value(amountToWithdraw)(""); // At this point, the caller's code is executed, and can call withdrawBalance again
+              ^-----^
+
+CRITICAL:root:Solidity compilation failed.
+=================
+
+scan reentrancy_simple.sol, return 1
+=================
+log:
+INFO:root:contract ../solfile/reentrancy_simple.sol:reentrancy_simple:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 98.3%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+INFO:symExec:	  Timestamp Dependency: 		 False
+INFO:symExec:	  Re-Entrancy Vulnerability: 		 True
+INFO:symExec:../solfile/reentrancy_simple.sol:17:10: Warning: Integer Overflow.
+         userBalance[msg.sender] += msg.value
+Integer Overflow occurs if:
+    userBalance[msg.sender] = 1
+INFO:symExec:../solfile/reentrancy_simple.sol:24:17: Warning: Re-Entrancy Vulnerability.
+         if( ! (msg.sender.call.value(userBalance[msg.sender])()
+INFO:symExec:	====== Analysis Completed ======
+[{"constant":false,"inputs":[],"name":"withdrawBalance","outputs":[],"payable":false,"type":"function"},{"constant":false,"inputs":[],"name":"addToBalance","outputs":[],"payable":true,"type":"function"},{"constant":true,"inputs":[{"name":"u","type":"address"}],"name":"getBalance","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"}]
+[{u'inputs': [], u'constant': False, u'name': u'withdrawBalance', u'outputs': [], u'payable': False, u'type': u'function'}, {u'inputs': [], u'constant': False, u'name': u'addToBalance', u'outputs': [], u'payable': True, u'type': u'function'}, {u'inputs': [{u'type': u'address', u'name': u'u'}], u'constant': True, u'name': u'getBalance', u'outputs': [{u'type': u'uint256', u'name': u''}], u'payable': False, u'type': u'function'}]
+64 96
+64 96
+u
+64 96
+64 96
+2
+{}
+1
+{'addToBalance': {}, 'withdrawBalance': {}, 'getBalance': {'u': None}}
+{'banlance': '0', 'timestamp': None, u'reentrancy_simple': {'addToBalance': {}, 'withdrawBalance': {}, 'getBalance': {'u': None}}, 'blocknumber': None}
+[{'banlance': '0', 'timestamp': None, u'reentrancy_simple': {'addToBalance': {}, 'withdrawBalance': {}, 'getBalance': {'u': None}}, 'blocknumber': None}]
+=================
+
+scan U_BANK.sol, return 1
+=================
+log:
+WARNING:root:You are using solc version 0.4.25, The latest supported version is 0.4.19
+INFO:root:contract ../solfile/U_BANK.sol:Log:
+INFO:root:contract ../solfile/U_BANK.sol:U_BANK:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 97.5%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+[{"constant":false,"inputs":[{"name":"_am","type":"uint256"}],"name":"Collect","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"constant":false,"inputs":[{"name":"_unlockTime","type":"uint256"}],"name":"Put","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"}],"name":"Acc","outputs":[{"name":"unlockTime","type":"uint256"},{"name":"balance","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"MinSum","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"inputs":[{"name":"log","type":"address"}],"payable":false,"stateMutability":"nonpayable","type":"constructor"},{"payable":true,"stateMutability":"payable","type":"fallback"}]
+[{u'inputs': [{u'type': u'uint256', u'name': u'_am'}], u'constant': False, u'name': u'Collect', u'outputs': [], u'stateMutability': u'payable', u'payable': True, u'type': u'function'}, {u'inputs': [{u'type': u'uint256', u'name': u'_unlockTime'}], u'constant': False, u'name': u'Put', u'outputs': [], u'stateMutability': u'payable', u'payable': True, u'type': u'function'}, {u'inputs': [{u'type': u'address', u'name': u''}], u'constant': True, u'name': u'Acc', u'outputs': [{u'type': u'uint256', u'name': u'unlockTime'}, {u'type': u'uint256', u'name': u'balance'}], u'stateMutability': u'view', u'payable': False, u'type': u'function'}, {u'inputs': [], u'constant': True, u'name': u'MinSum', u'outputs': [{u'type': u'uint256', u'name': u''}], u'stateMutability': u'view', u'payable': False, u'type': u'function'}, {u'stateMutability': u'nonpayable', u'inputs': [{u'type': u'address', u'name': u'log'}], u'type': u'constructor', u'payable': False}, {u'stateMutability': u'payable', u'payable': True, u'type': u'fallback'}]
+64 128
+64 128
+_am
+64 128
+64 128
+64 128
+64 128
+_unlockTime
+64 128
+64 128
+64 128
+64 128
+64 128
+64 128
+64 128
+64 128
+64 128
+64 128
+[Ia_store-some_var_3- = 0,
+ Iv = 33554432,
+ IH_s = 1,
+ Ia_store-2-MinSum = 28948022309329048855892746252171976963317496166410141009864396001978282409985,
+ Id_1 = 28898938005948861049358263287157975716967106783062975587063544487221370290176,
+ _am = 57896044618658097711785492504343953926634992332820282019728792003956631928833,
+ Ia_store-1 + some_var_3- = 86844066927987146567678238756515930889952488499230423029593188005934847229952,
+ init_Is = 28948022309329048855892746252171976963317496166410141009864396001978282409984,
+ init_Ia = 33554432,
+ Id_size = 57896044618658097711785492504343953926634992332820282019728792003956564819968]
+Traceback (most recent call last):
+  File "../../oyente/oyente/oyente.py", line 223, in <module>
+    main()
+  File "../../oyente/oyente/oyente.py", line 218, in main
+    exit_code = analyze_solidity()
+  File "../../oyente/oyente/oyente.py", line 111, in analyze_solidity
+    results, exit_code = run_solidity_analysis(inputs)
+  File "../../oyente/oyente/oyente.py", line 87, in run_solidity_analysis
+    result, return_code = symExec.run(disasm_file=inp['disasm_file'], source_map=inp['source_map'], source_file=inp['source'],ABI=inp['ABI'],contract_name=inp['c_name'])
+  File "/mnt/c/Users/Reska/Desktop/dc/dustbin/oyente/oyente/symExec.py", line 2781, in run
+    ret = detect_vulnerabilities()
+  File "/mnt/c/Users/Reska/Desktop/dc/dustbin/oyente/oyente/symExec.py", line 2597, in detect_vulnerabilities
+    func_params_value_timestamp=detect_time_dependency()#####TD3
+  File "/mnt/c/Users/Reska/Desktop/dc/dustbin/oyente/oyente/symExec.py", line 2161, in detect_time_dependency
+    name=func['name']
+KeyError: 'name'
+=================
+
+scan W_WALLET.sol, return 1
+=================
+log:
+WARNING:root:You are using solc version 0.4.25, The latest supported version is 0.4.19
+INFO:root:contract ../solfile/W_WALLET.sol:Log:
+INFO:root:contract ../solfile/W_WALLET.sol:W_WALLET:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 97.5%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+[{"constant":false,"inputs":[{"name":"_am","type":"uint256"}],"name":"Collect","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"constant":false,"inputs":[{"name":"_unlockTime","type":"uint256"}],"name":"Put","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"}],"name":"Acc","outputs":[{"name":"unlockTime","type":"uint256"},{"name":"balance","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"MinSum","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"inputs":[{"name":"log","type":"address"}],"payable":false,"stateMutability":"nonpayable","type":"constructor"},{"payable":true,"stateMutability":"payable","type":"fallback"}]
+[{u'inputs': [{u'type': u'uint256', u'name': u'_am'}], u'constant': False, u'name': u'Collect', u'outputs': [], u'stateMutability': u'payable', u'payable': True, u'type': u'function'}, {u'inputs': [{u'type': u'uint256', u'name': u'_unlockTime'}], u'constant': False, u'name': u'Put', u'outputs': [], u'stateMutability': u'payable', u'payable': True, u'type': u'function'}, {u'inputs': [{u'type': u'address', u'name': u''}], u'constant': True, u'name': u'Acc', u'outputs': [{u'type': u'uint256', u'name': u'unlockTime'}, {u'type': u'uint256', u'name': u'balance'}], u'stateMutability': u'view', u'payable': False, u'type': u'function'}, {u'inputs': [], u'constant': True, u'name': u'MinSum', u'outputs': [{u'type': u'uint256', u'name': u''}], u'stateMutability': u'view', u'payable': False, u'type': u'function'}, {u'stateMutability': u'nonpayable', u'inputs': [{u'type': u'address', u'name': u'log'}], u'type': u'constructor', u'payable': False}, {u'stateMutability': u'payable', u'payable': True, u'type': u'fallback'}]
+64 128
+64 128
+_am
+64 128
+64 128
+64 128
+64 128
+_unlockTime
+64 128
+64 128
+64 128
+64 128
+64 128
+64 128
+64 128
+64 128
+64 128
+64 128
+[Ia_store-some_var_3- = 0,
+ Iv = 33554432,
+ IH_s = 1,
+ Ia_store-2-MinSum = 28948022309329048855892746252171976963317496166410141009864396001978282409985,
+ Id_1 = 28898938005948861049358263287157975716967106783062975587063544487221370290176,
+ _am = 57896044618658097711785492504343953926634992332820282019728792003956631928833,
+ Ia_store-1 + some_var_3- = 86844066927987146567678238756515930889952488499230423029593188005934847229952,
+ init_Is = 28948022309329048855892746252171976963317496166410141009864396001978282409984,
+ init_Ia = 33554432,
+ Id_size = 57896044618658097711785492504343953926634992332820282019728792003956564819968]
+Traceback (most recent call last):
+  File "../../oyente/oyente/oyente.py", line 223, in <module>
+    main()
+  File "../../oyente/oyente/oyente.py", line 218, in main
+    exit_code = analyze_solidity()
+  File "../../oyente/oyente/oyente.py", line 111, in analyze_solidity
+    results, exit_code = run_solidity_analysis(inputs)
+  File "../../oyente/oyente/oyente.py", line 87, in run_solidity_analysis
+    result, return_code = symExec.run(disasm_file=inp['disasm_file'], source_map=inp['source_map'], source_file=inp['source'],ABI=inp['ABI'],contract_name=inp['c_name'])
+  File "/mnt/c/Users/Reska/Desktop/dc/dustbin/oyente/oyente/symExec.py", line 2781, in run
+    ret = detect_vulnerabilities()
+  File "/mnt/c/Users/Reska/Desktop/dc/dustbin/oyente/oyente/symExec.py", line 2597, in detect_vulnerabilities
+    func_params_value_timestamp=detect_time_dependency()#####TD3
+  File "/mnt/c/Users/Reska/Desktop/dc/dustbin/oyente/oyente/symExec.py", line 2161, in detect_time_dependency
+    name=func['name']
+KeyError: 'name'
+=================
+
+scan X_WALLET.sol, return 1
+=================
+log:
+WARNING:root:You are using solc version 0.4.25, The latest supported version is 0.4.19
+INFO:root:contract ../solfile/X_WALLET.sol:Log:
+INFO:root:contract ../solfile/X_WALLET.sol:X_WALLET:
+INFO:symExec:	============ Results ===========
+INFO:symExec:	  EVM Code Coverage: 			 97.5%
+INFO:symExec:	  Integer Underflow: 			 False
+INFO:symExec:	  Integer Overflow: 			 True
+INFO:symExec:	  Parity Multisig Bug 2: 		 False
+INFO:symExec:	  Callstack Depth Attack Vulnerability:  False
+INFO:symExec:	  Transaction-Ordering Dependence (TOD): False
+[{"constant":false,"inputs":[{"name":"_am","type":"uint256"}],"name":"Collect","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"constant":false,"inputs":[{"name":"_unlockTime","type":"uint256"}],"name":"Put","outputs":[],"payable":true,"stateMutability":"payable","type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"}],"name":"Acc","outputs":[{"name":"unlockTime","type":"uint256"},{"name":"balance","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"MinSum","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"inputs":[{"name":"log","type":"address"}],"payable":false,"stateMutability":"nonpayable","type":"constructor"},{"payable":true,"stateMutability":"payable","type":"fallback"}]
+[{u'inputs': [{u'type': u'uint256', u'name': u'_am'}], u'constant': False, u'name': u'Collect', u'outputs': [], u'stateMutability': u'payable', u'payable': True, u'type': u'function'}, {u'inputs': [{u'type': u'uint256', u'name': u'_unlockTime'}], u'constant': False, u'name': u'Put', u'outputs': [], u'stateMutability': u'payable', u'payable': True, u'type': u'function'}, {u'inputs': [{u'type': u'address', u'name': u''}], u'constant': True, u'name': u'Acc', u'outputs': [{u'type': u'uint256', u'name': u'unlockTime'}, {u'type': u'uint256', u'name': u'balance'}], u'stateMutability': u'view', u'payable': False, u'type': u'function'}, {u'inputs': [], u'constant': True, u'name': u'MinSum', u'outputs': [{u'type': u'uint256', u'name': u''}], u'stateMutability': u'view', u'payable': False, u'type': u'function'}, {u'stateMutability': u'nonpayable', u'inputs': [{u'type': u'address', u'name': u'log'}], u'type': u'constructor', u'payable': False}, {u'stateMutability': u'payable', u'payable': True, u'type': u'fallback'}]
+64 128
+64 128
+_am
+64 128
+64 128
+64 128
+64 128
+_unlockTime
+64 128
+64 128
+64 128
+64 128
+64 128
+64 128
+64 128
+64 128
+64 128
+64 128
+[Ia_store-some_var_3- = 0,
+ Iv = 33554432,
+ IH_s = 1,
+ Ia_store-2-MinSum = 28948022309329048855892746252171976963317496166410141009864396001978282409985,
+ Id_1 = 28898938005948861049358263287157975716967106783062975587063544487221370290176,
+ _am = 57896044618658097711785492504343953926634992332820282019728792003956631928833,
+ Ia_store-1 + some_var_3- = 86844066927987146567678238756515930889952488499230423029593188005934847229952,
+ init_Is = 28948022309329048855892746252171976963317496166410141009864396001978282409984,
+ init_Ia = 33554432,
+ Id_size = 57896044618658097711785492504343953926634992332820282019728792003956564819968]
+Traceback (most recent call last):
+  File "../../oyente/oyente/oyente.py", line 223, in <module>
+    main()
+  File "../../oyente/oyente/oyente.py", line 218, in main
+    exit_code = analyze_solidity()
+  File "../../oyente/oyente/oyente.py", line 111, in analyze_solidity
+    results, exit_code = run_solidity_analysis(inputs)
+  File "../../oyente/oyente/oyente.py", line 87, in run_solidity_analysis
+    result, return_code = symExec.run(disasm_file=inp['disasm_file'], source_map=inp['source_map'], source_file=inp['source'],ABI=inp['ABI'],contract_name=inp['c_name'])
+  File "/mnt/c/Users/Reska/Desktop/dc/dustbin/oyente/oyente/symExec.py", line 2781, in run
+    ret = detect_vulnerabilities()
+  File "/mnt/c/Users/Reska/Desktop/dc/dustbin/oyente/oyente/symExec.py", line 2597, in detect_vulnerabilities
+    func_params_value_timestamp=detect_time_dependency()#####TD3
+  File "/mnt/c/Users/Reska/Desktop/dc/dustbin/oyente/oyente/symExec.py", line 2161, in detect_time_dependency
+    name=func['name']
+KeyError: 'name'
+=================
+

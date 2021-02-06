@@ -1,0 +1,3 @@
+scan CryptoRoulette.sol, return 0
+scan NameRegistrar.sol, return 0
+scan OpenAddressLottery.sol, return 0

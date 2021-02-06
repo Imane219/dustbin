@@ -6,7 +6,7 @@
 
 pragma solidity ^0.4.19;
 
-contract PrivateBank
+contract PrivateBankMod
 {
     mapping (address => uint) public balances;
         

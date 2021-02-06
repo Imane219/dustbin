@@ -1,0 +1,4 @@
+filename, err code, Integer Underflow, Integer Overflow, Parity Multisig Bug 2, Callstack Depth Attack Vulnerability, Transaction-Ordering Dependence (TOD), Timestamp Dependency, Re-Entrancy Vulnerability, 
+CryptoRoulette.sol, 0, False, True, False, False, False, False, False, 
+NameRegistrar.sol, 0, False, True, False, False, False, False, False, 
+OpenAddressLottery.sol, 0, True, False, False, False, False, False, False, 

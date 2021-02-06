@@ -1,5 +1,6 @@
 /TEST/*
-!/TEST/pyfile/
+!/TEST/pyfile/test.py
+!/TEST/result/
 
 /sFuzz/*
 !/sFuzz/fuzzer/

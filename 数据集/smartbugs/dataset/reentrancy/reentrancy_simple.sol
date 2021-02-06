@@ -6,7 +6,7 @@
 
  pragma solidity ^0.4.15;
 
- contract Reentrance {
+ contract reentrancy_simple {
      mapping (address => uint) userBalance;
 
      function getBalance(address u) constant returns(uint){

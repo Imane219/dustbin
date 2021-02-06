@@ -1,0 +1,48 @@
+scan EtherLotto.sol, return 0
+scan Governmental.sol, return 1
+=================
+log:
+CRITICAL:root:solc output:
+
+======= Attacker =======
+Contract JSON ABI
+[{"constant":false,"inputs":[{"name":"target","type":"address"},{"name":"count","type":"uint256"}],"name":"attack","outputs":[],"payable":false,"type":"function"}]
+
+
+======= Governmental =======
+Contract JSON ABI
+[{"constant":false,"inputs":[],"name":"resetInvestment","outputs":[],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"ONE_MINUTE","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"jackpot","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"owner","outputs":[{"name":"","type":"address"}],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"lastInvestor","outputs":[{"name":"","type":"address"}],"payable":false,"type":"function"},{"constant":false,"inputs":[],"name":"invest","outputs":[],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"lastInvestmentTimestamp","outputs":[{"name":"","type":"uint256"}],"payable":false,"type":"function"},{"inputs":[],"type":"constructor"}]
+
+
+CRITICAL:root:../solfile/Governmental.sol:34:5: Warning: Return value of low-level calls not used.
+    lastInvestor.send(jackpot);
+    ^------------------------^
+../solfile/Governmental.sol:35:5: Warning: Return value of low-level calls not used.
+    owner.send(this.balance-1 ether);
+    ^------------------------------^
+
+CRITICAL:root:Solidity compilation failed.
+=================
+
+scan lottopollo.sol, return 1
+=================
+log:
+CRITICAL:root:solc output:
+
+======= lottopollo =======
+Contract JSON ABI
+[{"constant":false,"inputs":[{"name":"seed","type":"uint256"}],"name":"draw","outputs":[],"payable":false,"type":"function"},{"constant":true,"inputs":[],"name":"randomGen","outputs":[{"name":"randomNumber","type":"uint256"}],"payable":false,"type":"function"}]
+
+
+CRITICAL:root:../solfile/lottopollo.sol:14:7: Warning: Return value of low-level calls not used.
+      msg.sender.send( msg.value );
+      ^--------------------------^
+../solfile/lottopollo.sol:17:9: Warning: Return value of low-level calls not used.
+        leader.send( this.balance );
+        ^-------------------------^
+
+CRITICAL:root:Solidity compilation failed.
+=================
+
+scan roulette.sol, return 0
+scan TimedCrowdsale.sol, return 0

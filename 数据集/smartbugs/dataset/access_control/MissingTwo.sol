@@ -1,12 +1,13 @@
 /*
- * @source: https://smartcontractsecurity.github.io/SWC-registry/docs/SWC-118#incorrect-constructor-name2sol
+ * @source: https://smartcontractsecurity.github.io/SWC-registry/docs/SWC-118#incorrect-constructor-name1sol
  * @author: Ben Perez
- * @vulnerable_at_lines: 17
+ * @vulnerable_at_lines: 18
  */
+
 
 pragma solidity ^0.4.24;
 
-contract Missing{
+contract MissingTwo{
     address private owner;
 
     modifier onlyowner {
@@ -14,7 +15,7 @@ contract Missing{
         _;
     }
     // <yes> <report> ACCESS_CONTROL
-    function Constructor()
+    function missing()
         public
     {
         owner = msg.sender;
@@ -28,5 +29,4 @@ contract Missing{
     {
        owner.transfer(this.balance);
     }
-
 }

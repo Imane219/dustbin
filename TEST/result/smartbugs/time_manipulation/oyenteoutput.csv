@@ -1,0 +1,6 @@
+filename, err code, Integer Underflow, Integer Overflow, Parity Multisig Bug 2, Callstack Depth Attack Vulnerability, Transaction-Ordering Dependence (TOD), Timestamp Dependency, Re-Entrancy Vulnerability, 
+EtherLotto.sol, 0, False, False, False, False, False, False, False, 
+Governmental.sol, 1, 
+lottopollo.sol, 1, 
+roulette.sol, 0, 
+TimedCrowdsale.sol, 0, False, False, False, False, False, False, False, 

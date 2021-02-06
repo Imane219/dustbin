@@ -1,0 +1,4 @@
+contract name, Run Time, Coverage, gasless send, exception disorder, reentrancy, timestamp dependency, block number dependency, dangerous delegatecall, freezing ether, integer overflow, integer underflow, Not Tested, 
+CryptoRoulette, 0d 0h 2m 0s, 90%, True, False, False, True, True, False, False, False, True, True, 
+NameRegistrar, 0d 0h 0m 0s, 100%, False, False, False, False, False, False, False, False, False, True, 
+OpenAddressLottery, 0d 0h 2m 0s, 5%, False, False, False, False, False, False, False, False, False, True, 

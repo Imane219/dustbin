@@ -1,0 +1,5 @@
+contract name, Run Time, Coverage, gasless send, exception disorder, reentrancy, timestamp dependency, block number dependency, dangerous delegatecall, freezing ether, integer overflow, integer underflow, Not Tested, 
+DosAuction, 0d 0h 2m 0s, 50%, False, False, False, False, False, False, False, False, False, True, 
+DosGas, False, 
+DosNumber, False, 
+DosOneFunc, False, 

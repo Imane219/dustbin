@@ -17,7 +17,7 @@
 
 pragma solidity ^0.4.9;
 
-contract WalletEvents {
+contract WalletEventsTwo {
   // EVENTS
 
   // this contract only has six types of events: it can accept a confirmation, in which case
@@ -67,7 +67,7 @@ contract WalletAbi {
   function confirm(bytes32 _h) returns (bool o_success);
 }
 
-contract WalletLibrary is WalletEvents {
+contract WalletLibrary is WalletEventsTwo {
   // TYPES
 
   // struct for the status of a pending operation.

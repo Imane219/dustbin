@@ -6,7 +6,7 @@
 
 pragma solidity ^0.4.19;
 
-contract ETH_VAULT
+contract ETH_VAULT_MOD
 {
     mapping (address => uint) public balances;
     

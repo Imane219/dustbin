@@ -66,14 +66,9 @@ def mk_datdir(sol_path,sfuzzdir_path):
     dirs = os.listdir("./")
     for solname in dirs:
         if os.path.isdir(f"./{solname}"):
-            a=open(f"./{solname}/testcaseCount.dat","rb")
-            if(a):
-                p=a.read(1)
-                a.close()
-                if(p!=bytes([0])):
-                    copy_dir(f"./{solname}",f"{sfuzzdir_path}/{solname}")
-                    shutil.copyfile(f"{sol_path}/{solname}.sol",f"{sfuzzdir_path}/{solname}/{solname}.sol")
-                    print(solname)
+            copy_dir(f"./{solname}",f"{sfuzzdir_path}/{solname}")
+            shutil.copyfile(f"{sol_path}/{solname}.sol",f"{sfuzzdir_path}/{solname}/{solname}.sol")
+            print(solname)
             shutil.rmtree(f"./{solname}")
 
 def sfuzz_test(sol_dir_path, exec_path, output_path,test_time,bug_list):
@@ -133,6 +128,6 @@ def sfuzz_test(sol_dir_path, exec_path, output_path,test_time,bug_list):
     result_file.close()
 
 if __name__ == '__main__':
-    #oyente_generate(sol_path,oyente_path,oyente_output_file_path,oyente_log_file_path)
-    #mk_datdir(sol_path,sfuzzdir_path)
+    oyente_generate(sol_path,oyente_path,oyente_output_file_path,oyente_log_file_path)
+    mk_datdir(sol_path,sfuzzdir_path)
     sfuzz_test(sfuzzdir_path,sfuzz_path,sfuzz_output_file_path,sfuzz_test_time,sfuzz_bug_list)

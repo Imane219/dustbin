@@ -1,0 +1,17 @@
+scan ERC20.sol, return 0
+scan EthTxOrderDependenceMinimal.sol, return 0
+scan FindThisHash.sol, return 0
+scan OddsAndEvens.sol, return 1
+=================
+log:
+CRITICAL:root:solc output:
+
+======= OddsAndEvens =======
+Contract JSON ABI
+[{"constant":false,"inputs":[],"name":"getProfit","outputs":[],"payable":false,"type":"function"},{"constant":false,"inputs":[{"name":"number","type":"uint256"}],"name":"play","outputs":[],"payable":true,"type":"function"},{"constant":true,"inputs":[{"name":"","type":"uint256"}],"name":"players","outputs":[{"name":"addr","type":"address"},{"name":"number","type":"uint256"}],"payable":false,"type":"function"},{"inputs":[],"type":"constructor"}]
+
+
+CRITICAL:root:
+CRITICAL:root:Solidity compilation failed.
+=================
+

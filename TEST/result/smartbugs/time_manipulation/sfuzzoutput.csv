@@ -1,0 +1,3 @@
+contract name, Run Time, Coverage, gasless send, exception disorder, reentrancy, timestamp dependency, block number dependency, dangerous delegatecall, freezing ether, integer overflow, integer underflow, Not Tested, 
+EtherLotto, 0d 0h 0m 0s, 100%, True, False, False, True, False, False, False, False, False, True, 
+TimedCrowdsale, False, 

@@ -1,17 +1,17 @@
 /*
- * @source: https://smartcontractsecurity.github.io/SWC-registry/docs/SWC-105#wallet-02-refund-nosubsol
+ * @source: https://smartcontractsecurity.github.io/SWC-registry/docs/SWC-105#wallet-04-confused-signsol
  * @author: -
- * @vulnerable_at_lines: 36
+ * @vulnerable_at_lines: 30
  */
 
  pragma solidity ^0.4.24;
 
  /* User can add pay in and withdraw Ether.
-    Unfortunately the developer forgot set the user's balance to 0 when refund() is called.
-    An attacker can pay in a small amount of Ether and call refund() repeatedly to empty the contract.
+    Unfortunatelty, the developer was drunk and used the wrong comparison operator in "withdraw()"
+    Anybody can withdraw arbitrary amounts of Ether :()
  */
 
- contract Wallet {
+ contract WalletConfusedSign {
      address creator;
 
      mapping(address => uint256) balances;
@@ -26,14 +26,10 @@
      }
 
      function withdraw(uint256 amount) public {
-         require(amount <= balances[msg.sender]);
+         // <yes> <report> ACCESS_CONTROL
+         require(amount >= balances[msg.sender]);
          msg.sender.transfer(amount);
          balances[msg.sender] -= amount;
-     }
-
-     function refund() public {
-         // <yes> <report> ACCESS_CONTROL
-         msg.sender.transfer(balances[msg.sender]);
      }
 
      // In an emergency the owner can migrate  allfunds to a different address.

@@ -1,0 +1,60 @@
+scan BECToken.sol, return 0
+scan IntegerOverflowAdd.sol, return 1
+=================
+log:
+CRITICAL:root:solc output:
+
+CRITICAL:root:../solfile/IntegerOverflowAdd.sol:15:9: Error: Undeclared identifier.
+        require(balanceOf[msg.sender] >= _value);
+        ^-----^
+
+CRITICAL:root:Solidity compilation failed.
+=================
+
+scan IntegerOverflowAdd2.sol, return 0
+scan IntegerOverflowBenign1.sol, return 0
+scan IntegerOverflowMappingSym1.sol, return 1
+=================
+log:
+CRITICAL:root:solc output:
+
+======= ../solfile/IntegerOverflowMappingSym1.sol:IntegerOverflowMappingSym1 =======
+Contract JSON ABI
+[{"constant":false,"inputs":[{"name":"k","type":"uint256"},{"name":"v","type":"uint256"}],"name":"init","outputs":[],"payable":false,"type":"function"}]
+
+CRITICAL:root:
+CRITICAL:root:Solidity compilation failed.
+=================
+
+scan IntegerOverflowMinimal.sol, return 0
+scan IntegerOverflowMul.sol, return 0
+scan IntegerOverflowMultiTxMultiFuncFeasible.sol, return 0
+scan IntegerOverflowMultiTxOneFuncFeasible.sol, return 0
+scan Overflow.sol, return 0
+scan overflow_simple_add.sol, return 1
+=================
+log:
+CRITICAL:root:solc output:
+
+CRITICAL:root:../solfile/overflow_simple_add.sol:7:1: Error: Source file requires different compiler version (current compiler is 0.4.19+commit.c4cbbb05.Linux.g++ - note that nightly builds are considered to be strictly less than the released version
+pragma solidity 0.4.25;
+^---------------------^
+
+CRITICAL:root:Solidity compilation failed.
+=================
+
+scan overflow_single_tx.sol, return 0
+scan timelock.sol, return 1
+=================
+log:
+CRITICAL:root:solc output:
+
+CRITICAL:root:../solfile/timelock.sol:26:10: Error: Undeclared identifier.
+         require(balances[msg.sender] > 0);
+         ^-----^
+
+CRITICAL:root:Solidity compilation failed.
+=================
+
+scan token.sol, return 0
+scan tokensalechallenge.sol, return 0

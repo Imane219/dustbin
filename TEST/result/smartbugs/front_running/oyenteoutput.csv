@@ -1,0 +1,5 @@
+filename, err code, Integer Underflow, Integer Overflow, Parity Multisig Bug 2, Callstack Depth Attack Vulnerability, Transaction-Ordering Dependence (TOD), Timestamp Dependency, Re-Entrancy Vulnerability, 
+ERC20.sol, 0, False, False, False, False, False, False, False, 
+EthTxOrderDependenceMinimal.sol, 0, False, False, False, False, False, False, False, 
+FindThisHash.sol, 0, False, True, False, False, False, False, False, 
+OddsAndEvens.sol, 1, 

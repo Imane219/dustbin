@@ -1,0 +1,7 @@
+filename, err code, Integer Underflow, Integer Overflow, Parity Multisig Bug 2, Callstack Depth Attack Vulnerability, Transaction-Ordering Dependence (TOD), Timestamp Dependency, Re-Entrancy Vulnerability, 
+DosAuction.sol, 0, False, False, False, False, False, False, False, 
+DosGas.sol, 0, False, False, False, False, False, False, False, 
+DosNumber.sol, 0, False, True, False, False, False, False, False, 
+DosOneFunc.sol, 0, False, False, False, False, False, False, False, 
+Government.sol, 1, 
+Refunder.sol, 1, 
